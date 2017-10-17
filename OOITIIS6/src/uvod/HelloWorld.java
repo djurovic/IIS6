@@ -3,7 +3,7 @@ package uvod;
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		//komentar
+		// Vezbe 1
 		System.out.println("Zdravo svete!");
 	}
 
