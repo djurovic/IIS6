@@ -31,6 +31,28 @@ public class Test {
 		// postaviti x koordinatu krajnje tacke linije l2 na vrednost y koordinate tacke gore levo p1
 		l2.getKrajnja().setX(p1.getGoreLevo().getY());
 		System.out.println(l2.getKrajnja().getX());
+		Pravougaonik p2=new Pravougaonik(new Tacka(t3.getX(),t3.getY()),15,17,"Crna");
+		System.out.println(p2.povrsina());
+		System.out.println("Obim pravougaonika p2:" + p2.obim());
+		Kvadrat k1 = new Kvadrat(new Tacka(p2.getGoreLevo().getX(),p2.getGoreLevo().getY()), 30, "crvena");
+		System.out.println("Povrsina k1 je "+ k1.povrsina());
+		/*
+		Postaviti X koordinatu
+		tacke goreLevo pravougaonika p1 na
+		vrednost zbira X koordinate tacke t1
+		i Y koordinate pocetne tacke linije l1.
+		*/
+		p1.getGoreLevo().setX(t1.getX() + l1.getPocetna().getY());
+		/*Kreirati pravougaonik p3 
+		 koji ce za X koordinatu tacke gore levo 
+		 imati zbir x koordinate krajnje tacke l2 i obima p2 
+		 a za Y, Y koordinatu tacke t2 umanjene za povrsinu p1 
+		 koji ce za visinu imati proizvod obima p1 i povrsine p2.
+		 sirina 13
+		 ispisati sve vrednosti varijabli instance p2
+		  */
+		Pravougaonik p3=new Pravougaonik(new Tacka(l2.getKrajnja().getX()+p2.obim(),t2.getY()-p1.povrsina()), 13, p1.obim()*p2.povrsina());
+		System.out.println("x koordinata goreLevo:"+p3.getGoreLevo().getX()+"\ny koordinata goreLevo:"+p3.getGoreLevo().getY()+"\nsirina:"+p3.getSirina()+"\nvisina:"+p3.getVisina()+"\nboja:"+p3.getBoja());
 	}
 
 }

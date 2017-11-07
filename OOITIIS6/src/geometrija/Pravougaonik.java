@@ -18,7 +18,12 @@ public class Pravougaonik {
 		this(goreLevo, sirina, visina);
 		this.boja = boja;
 	}
-
+	public int povrsina() {
+		return sirina * this.visina;
+	}
+	public int obim() {
+		return 2*sirina + 2*visina;
+	}
 	
 	public Tacka getGoreLevo() {
 		return goreLevo;
