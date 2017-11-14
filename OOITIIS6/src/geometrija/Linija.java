@@ -16,6 +16,10 @@ public class Linija {
 		this(pocetna, krajnja);
 		this.boja = boja;
 	}
+	
+	public String toString() {
+		return pocetna + "->" + krajnja;
+	}
 	public void pomeriZa(int poX, int poY) {
 		pocetna.pomeriZa(poX, poY);
 		krajnja.pomeriZa(poX, poY);

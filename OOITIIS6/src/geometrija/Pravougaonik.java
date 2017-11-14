@@ -49,4 +49,8 @@ public class Pravougaonik {
 	public void setBoja(String boja) {
 		this.boja = boja;
 	}
+	
+	public String toString() {
+		return "Tacka gore levo=" + goreLevo +  ", sirina =" + sirina + ", visina=" + visina;
+	}
 }

@@ -53,6 +53,49 @@ public class Test {
 		  */
 		Pravougaonik p3=new Pravougaonik(new Tacka(l2.getKrajnja().getX()+p2.obim(),t2.getY()-p1.povrsina()), 13, p1.obim()*p2.povrsina());
 		System.out.println("x koordinata goreLevo:"+p3.getGoreLevo().getX()+"\ny koordinata goreLevo:"+p3.getGoreLevo().getY()+"\nsirina:"+p3.getSirina()+"\nvisina:"+p3.getVisina()+"\nboja:"+p3.getBoja());
+		
+		Krug kr1 = new Krug(t1, 10);
+		
+		System.out.println(kr1.obim());
+		System.out.println(kr1.povrsina());
+		
+		System.out.println(t1.getX());
+		System.out.println(t1.getY());
+		
+		System.out.println(t1);
+		System.out.println(l1);
+		
+		System.out.println(p1.toString());
+		
+		Tacka prva = new Tacka(10, 10, "crvena");
+		Tacka druga = new Tacka(10, 10, "crvena");
+		
+		System.out.println(prva==druga);
+		
+		System.out.println(prva.getX()==druga.getX());
+		System.out.println(prva.getY()==druga.getY());
+		System.out.println(prva.getBoja()==druga.getBoja());
+		
+		System.out.println(prva.equals(druga));
+		
+		System.out.println(prva.equals(l1));
+		
+		String prvi = "pera";
+		String drugi = "pera";
+		
+		System.out.println(prvi==drugi);
+		
+		String treci = new String("pera");
+		String cetvrti = new String("pera");
+		
+		System.out.println(treci==cetvrti);
+		
+		Tacka treca = new Tacka(10, 10, new String("bela"));
+		Tacka cetvrta = new Tacka(10, 10, new String("bela"));
+		
+		System.out.println(treca.equals(cetvrta));
+		
+		
 	}
 
 }
